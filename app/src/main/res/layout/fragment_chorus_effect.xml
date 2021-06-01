@@ -1,0 +1,106 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.daleluginbuhl.groupie.ChorusEffectFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/chorus_enclosure">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <it.beppi.knoblibrary.Knob
+            android:id="@+id/chorus_voices_knob"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="30dp"
+            android:layout_weight="1"
+            app:kAnimationBounciness="20"
+            app:kAnimationSpeed="10"
+            app:kBorderColor="#ff424242"
+            app:kDefaultState="0"
+            app:kFreeRotation="false"
+            app:kIndicatorColor="#ff424242"
+            app:kIndicatorRelativeLength="0.35"
+            app:kIndicatorWidth="1dp"
+            app:kKnobDrawable="@drawable/knob"
+            app:kKnobDrawableRotates="false"
+            app:kMaxAngle="120"
+            app:kMinAngle="-120"
+            app:kNumberOfStates="6"
+            app:kSelectedStateMarkerContinuous="true"
+            app:kShowBalloonValues="true"
+            app:kStateMarkersAccentPeriodicity="5"
+            app:kStateMarkersAccentWidth="0.5dp"
+            app:kStateMarkersWidth="0.5dp"
+            app:kSwipe="vertical"
+            app:kSwipeSensitivityPixels="100" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/chorus_voices_label"
+            android:layout_width="0dp"
+            android:layout_height="81dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Voices"
+            android:textColor="@android:color/background_light"
+            android:textSize="36sp" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/viewCenter"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/viewLeft"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/pedal_footswitch" />
+
+        <View
+            android:id="@+id/viewRight"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/chorus_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="CHORUS"
+        android:textColor="@android:color/background_light"
+        android:textSize="36sp" />
+
+    <View
+        android:id="@+id/viewBottom"
+        android:layout_width="match_parent"
+        android:layout_height="8dp" />
+
+</LinearLayout>

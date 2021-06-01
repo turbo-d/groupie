@@ -1,0 +1,172 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.daleluginbuhl.groupie.FlangerEffectFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/flanger_enclosure">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <it.beppi.knoblibrary.Knob
+            android:id="@+id/flanger_delay_knob"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            app:kAnimationBounciness="20"
+            app:kAnimationSpeed="10"
+            app:kBalloonValuesAnimation="fade"
+            app:kBalloonValuesRelativePosition="0.25"
+            app:kBalloonValuesTextSize="4sp"
+            app:kBorderWidth="0dp"
+            app:kDefaultState="10"
+            app:kFreeRotation="false"
+            app:kIndicatorWidth="0dp"
+            app:kKnobDrawable="@drawable/knob2"
+            app:kKnobDrawableRotates="true"
+            app:kMaxAngle="120"
+            app:kMinAngle="-120"
+            app:kNumberOfStates="128"
+            app:kSelectedStateMarkerContinuous="true"
+            app:kShowBalloonValues="true"
+            app:kStateMarkersAccentWidth="0dp"
+            app:kStateMarkersWidth="0dp"
+            app:kSwipe="vertical"
+            app:kSwipeSensitivityPixels="1" />
+
+        <it.beppi.knoblibrary.Knob
+            android:id="@+id/flanger_rate_knob"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            app:kAnimationBounciness="20"
+            app:kAnimationSpeed="10"
+            app:kBalloonValuesAnimation="fade"
+            app:kBalloonValuesRelativePosition="0.25"
+            app:kBalloonValuesTextSize="4sp"
+            app:kBorderWidth="0dp"
+            app:kDefaultState="10"
+            app:kFreeRotation="false"
+            app:kIndicatorWidth="0dp"
+            app:kKnobDrawable="@drawable/knob2"
+            app:kKnobDrawableRotates="true"
+            app:kMaxAngle="120"
+            app:kMinAngle="-120"
+            app:kNumberOfStates="128"
+            app:kSelectedStateMarkerContinuous="true"
+            app:kShowBalloonValues="true"
+            app:kStateMarkersAccentWidth="0dp"
+            app:kStateMarkersWidth="0dp"
+            app:kSwipe="vertical"
+            app:kSwipeSensitivityPixels="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/flanger_delay_label"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Delay"
+            android:textColor="@android:color/background_light"
+            android:textSize="36sp" />
+
+        <TextView
+            android:id="@+id/flanger_rate_label"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Rate"
+            android:textColor="@android:color/background_light"
+            android:textSize="36sp" />
+
+    </LinearLayout>
+
+    <it.beppi.knoblibrary.Knob
+        android:id="@+id/flanger_depth_knob"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        app:kAnimationBounciness="20"
+        app:kAnimationSpeed="10"
+        app:kBalloonValuesAnimation="fade"
+        app:kBalloonValuesRelativePosition="0.25"
+        app:kBalloonValuesTextSize="4sp"
+        app:kBorderWidth="0dp"
+        app:kDefaultState="10"
+        app:kFreeRotation="false"
+        app:kIndicatorWidth="0dp"
+        app:kKnobDrawable="@drawable/knob2"
+        app:kKnobDrawableRotates="true"
+        app:kMaxAngle="120"
+        app:kMinAngle="-120"
+        app:kNumberOfStates="128"
+        app:kSelectedStateMarkerContinuous="true"
+        app:kShowBalloonValues="true"
+        app:kStateMarkersAccentWidth="0dp"
+        app:kStateMarkersWidth="0dp"
+        app:kSwipe="vertical"
+        app:kSwipeSensitivityPixels="1" />
+
+    <TextView
+        android:id="@+id/flanger_depth_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Depth"
+        android:textColor="@android:color/background_light"
+        android:textSize="36sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/viewLeft"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            app:srcCompat="@drawable/pedal_footswitch" />
+
+        <View
+            android:id="@+id/viewRight"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/flanger_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="FLANGER"
+        android:textColor="@android:color/background_light"
+        android:textSize="36sp" />
+
+    <View
+        android:id="@+id/viewBottom"
+        android:layout_width="match_parent"
+        android:layout_height="8dp" />
+
+</LinearLayout>
